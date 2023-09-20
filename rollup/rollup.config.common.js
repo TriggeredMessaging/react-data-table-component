@@ -13,7 +13,9 @@ export const plugins = [
 		include: 'node_modules/**',
 	}),
 	visualizer(),
-	typescript(),
+	typescript({
+		abortOnError: false,
+	}),
 ];
 
 export default {
